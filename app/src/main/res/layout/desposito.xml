@@ -237,5 +237,21 @@
         tools:layout_editor_absoluteX="156dp"
         tools:layout_editor_absoluteY="185dp" />
 
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="73dp"
+        android:layout_height="70dp"
+        android:src="@drawable/credit_card"
+        tools:layout_editor_absoluteX="169dp"
+        tools:layout_editor_absoluteY="372dp" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="63dp"
+        android:layout_height="75dp"
+        android:src="@drawable/time_past"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="372dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
