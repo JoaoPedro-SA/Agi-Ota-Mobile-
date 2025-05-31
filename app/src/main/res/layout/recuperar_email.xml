@@ -57,40 +57,11 @@
                 android:id="@+id/linearLayoutTokenInputs"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center"
                 android:layout_marginTop="32dp"
-                app:layout_constraintTop_toBottomOf="@id/textViewRecoveryInstructions"
+                android:gravity="center"
+                android:orientation="horizontal"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent">
-
-                <EditText
-                    android:id="@+id/token_digit_1"
-                    style="@style/TokenDigitInput"
-                    android:nextFocusRight="@+id/token_digit_2" />
-
-                <EditText
-                    android:id="@+id/token_digit_2"
-                    style="@style/TokenDigitInput"
-                    android:nextFocusRight="@+id/token_digit_3"
-                    android:nextFocusLeft="@+id/token_digit_1" />
-
-                <EditText
-                    android:id="@+id/token_digit_3"
-                    style="@style/TokenDigitInput"
-                    android:nextFocusRight="@+id/token_digit_4"
-                    android:nextFocusLeft="@+id/token_digit_2" />
-
-                <EditText
-                    android:id="@+id/token_digit_4"
-                    style="@style/TokenDigitInput"
-                    android:nextFocusRight="@+id/token_digit_5"
-                    android:nextFocusLeft="@+id/token_digit_3" />
-
-                <EditText
-                    android:id="@+id/token_digit_5"
-                    style="@style/TokenDigitInput"
-                    android:nextFocusLeft="@+id/token_digit_4" />
+                app:layout_constraintTop_toBottomOf="@id/textViewRecoveryInstructions">
 
             </LinearLayout>
 
@@ -112,10 +83,10 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
-                android:background="#1189df"
+                android:background="#0D5CA8"
                 android:minHeight="50dp"
                 android:text="CONFIRMAR"
-                android:textColor="@color/white"
+                android:textColor="#FFFFFF"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -123,14 +94,25 @@
                 app:layout_constraintTop_toBottomOf="@id/textViewResendEmail" />
 
             <EditText
-                android:layout_width="316dp"
-                android:layout_height="113dp"
+                android:id="@+id/editTextMensagem"
+                android:layout_width="248dp"
+                android:layout_height="98dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="140dp"
+                android:layout_marginEnd="24dp"
                 android:background="@color/white"
-                android:orientation="horizontal"
-                tools:layout_editor_absoluteX="24dp"
-                tools:layout_editor_absoluteY="140dp"
+                android:hint="Digite sua mensagem"
+                android:inputType="textMultiLine"
+                android:maxLines="5"
+                android:minHeight="48dp"
+                android:padding="16dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-                ></EditText>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
