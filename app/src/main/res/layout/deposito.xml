@@ -76,6 +76,7 @@
 
     <Button
         android:id="@+id/buttonPix"
+        android:contentDescription="Pix"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginEnd="16dp"
@@ -92,6 +93,7 @@
 
     <Button
         android:id="@+id/buttonBoleto"
+        android:contentDescription="Boleto"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginEnd="18dp"
@@ -109,6 +111,7 @@
 
     <Button
         android:id="@+id/buttonRecarga"
+        android:contentDescription="Recarga de celular"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginEnd="16dp"
@@ -124,6 +127,7 @@
 
     <Button
         android:id="@+id/buttonHistorico"
+        android:contentDescription="Historico da conta"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginEnd="16dp"
@@ -140,6 +144,7 @@
 
     <Button
         android:id="@+id/buttonCartoes"
+        android:contentDescription="Cartão"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginEnd="16dp"
@@ -195,7 +200,7 @@
         app:layout_constraintTop_toBottomOf="@id/textViewSaldoLabel" />
 
     <TextView
-        android:id="@+id/ttextViewHistoricoNav"
+        android:id="@+id/textViewHistoricoNav"
         android:layout_width="107dp"
         android:layout_height="51dp"
         android:layout_marginStart="20dp"
