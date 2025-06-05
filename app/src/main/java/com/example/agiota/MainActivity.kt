@@ -20,11 +20,55 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        // Aqui você pega o botão e configura o clique para abrir a DepositoActivity
+        // Botão Depósito
         val buttonDeposito = findViewById<MaterialButton>(R.id.buttonDeposito)
         buttonDeposito.setOnClickListener {
             val intent = Intent(this, DepositoActivity::class.java)
             startActivity(intent)
+            this.onResume()
         }
+
+        // Botão Pagar
+        val buttonPagar = findViewById<MaterialButton>(R.id.buttonPagar)
+        buttonPagar.setOnClickListener {
+            val intent = Intent(this, PagarActivity::class.java)
+            startActivity(intent)
+            this.onResume()
+        }
+
+        // Botão Cofrinho
+        val buttonCofrinho = findViewById<MaterialButton>(R.id.buttonCofrinho)
+        buttonCofrinho.setOnClickListener {
+            val intent = Intent(this, ConfrinhoActivity::class.java)
+            startActivity(intent)
+            this.onResume()
+        }
+
+        // Botão Transferir
+        val buttonTransferir = findViewById<MaterialButton>(R.id.buttonTransferir)
+        buttonTransferir.setOnClickListener {
+            val intent = Intent(this, TransferirActivity::class.java)
+            startActivity(intent)
+            this.onResume()
+        }
+
+        // Botão Desenvolvedor (Grupo)
+        val buttonDesenvolvedor = findViewById<MaterialButton>(R.id.buttonDesenvolvedor)
+        buttonDesenvolvedor.setOnClickListener { // <-- CORREÇÃO AQUI
+            val intent = Intent(this, GrupoActivity::class.java)
+            startActivity(intent)
+            this.onResume()
+        }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        arrayOf(
+            findViewById<MaterialButton>(R.id.buttonDeposito),
+            findViewById<MaterialButton>(R.id.buttonPagar),
+            findViewById<MaterialButton>(R.id.buttonCofrinho),
+            findViewById<MaterialButton>(R.id.buttonTransferir),
+            findViewById<MaterialButton>(R.id.buttonDesenvolvedor)
+        ).forEach { it.isEnabled = true }
     }
 }

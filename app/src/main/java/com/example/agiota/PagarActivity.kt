@@ -5,13 +5,13 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.button.MaterialButton
 
-class DepositoActivity : AppCompatActivity() {
+class PagarActivity : AppCompatActivity() {
 
     private lateinit var buttonV: MaterialButton
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.deposito)
+        setContentView(R.layout.pagar)
 
         buttonV = findViewById(R.id.buttonV)
         buttonV.setOnClickListener {
