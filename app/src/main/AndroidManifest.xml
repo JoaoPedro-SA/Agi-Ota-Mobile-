@@ -21,9 +21,11 @@
             </intent-filter>
         </activity>
 
-        <!-- Declarar aqui sua nova Activity -->
         <activity android:name=".DepositoActivity" />
+        <activity android:name=".PagarActivity" />
+        <activity android:name=".ConfrinhoActivity" />
+        <activity android:name=".TransferirActivity" />
+        <activity android:name=".GrupoActivity" />
 
     </application>
-
 </manifest>

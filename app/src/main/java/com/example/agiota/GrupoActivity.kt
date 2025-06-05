@@ -5,15 +5,14 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.button.MaterialButton
 
-class ConfrinhoActivity : AppCompatActivity() {
+class GrupoActivity : AppCompatActivity() {
 
     private lateinit var buttonV: MaterialButton
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.cofrinnho)
+        setContentView(R.layout.quem_somos)
 
-        // Botão Desenvolvedor (Grupo)
         buttonV = findViewById(R.id.buttonV)
         buttonV.setOnClickListener {
             val intent = Intent(this, HomerActivity::class.java)

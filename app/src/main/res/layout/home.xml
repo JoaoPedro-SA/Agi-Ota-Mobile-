@@ -18,14 +18,16 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@id/imageViewBack"
-        app:layout_constraintTop_toTopOf="parent" />
+
+  />
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#A7C6ED">
+        android:background="#0058A8"
+        android:textColor="#ffffff">
 
 
         <TextView
@@ -35,6 +37,19 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="80dp"
             android:text="SALDO"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="80dp"
+            android:text="SALDO"
+            android:textColor="#ffffff"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -46,6 +61,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:text="R$0,20"
+            android:textColor="#ffffff"
             android:textSize="32sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/textView5" />
@@ -67,6 +83,7 @@
                 android:id="@+id/buttonDeposito"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
+                android:clickable="false"
                 android:text="DEPÓSITO"
                 android:textColor="#000000"
                 android:textSize="14sp"
@@ -81,6 +98,7 @@
                 android:id="@+id/buttonPagar"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
+                android:clickable="false"
                 android:text="PAGAR"
                 android:textColor="#000000"
                 android:textSize="14sp"
@@ -95,6 +113,7 @@
                 android:id="@+id/buttonCofrinho"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
+                android:clickable="false"
                 android:text="COFRINHO"
                 android:textColor="#000000"
                 android:textSize="14sp"
@@ -109,6 +128,7 @@
                 android:id="@+id/buttonTransferir"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
+                android:clickable="false"
                 android:text="TRANSFERIR"
                 android:textColor="#000000"
                 android:textSize="14sp"
@@ -125,8 +145,10 @@
             android:layout_width="0dp"
             android:layout_height="120dp"
             android:layout_marginTop="16dp"
-            android:background="#0058A8"
+            android:background="#0068A8"
+            android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/menuContainer">
 
@@ -138,6 +160,7 @@
                 android:layout_marginTop="16dp"
                 android:text="FATURA ABERTA"
                 android:textColor="#FFFFFF"
+                android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -149,6 +172,7 @@
                 android:layout_marginTop="8dp"
                 android:text="R$27.875,00"
                 android:textColor="#FFFFFF"
+                android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/textView7" />
 
@@ -160,6 +184,7 @@
                 android:layout_marginTop="16dp"
                 android:text="LIMITE DISPONÍVEL"
                 android:textColor="#FFFFFF"
+                android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/textView8" />
 
@@ -167,11 +192,13 @@
                 android:id="@+id/textView9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="16dp"
+                android:layout_marginEnd="48dp"
                 android:text="-R$8.000,00"
                 android:textColor="#FF0000"
+                android:textSize="20sp"
                 app:layout_constraintBaseline_toBaselineOf="@id/textView10"
                 app:layout_constraintEnd_toEndOf="parent" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -179,7 +206,7 @@
             android:layout_width="0dp"
             android:layout_height="120dp"
             android:layout_marginTop="28dp"
-            android:background="#0058A8"
+            android:background="#0068A8"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/faturaContainer">
@@ -214,20 +241,50 @@
                 app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <TextView
-            android:id="@+id/textView14"
-            android:layout_width="match_parent"
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonDesenvolvedor"
+            android:layout_width="300dp"
             android:layout_height="100dp"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="32dp"
+            android:background="#0058A8"
+            android:clickable="true"
             android:gravity="center"
-            android:text="App desenvolvido com ❤️"
-            android:textColor="#FFFFFF"
+            android:stateListAnimator="@null"
+            android:text="Desenvolvedores 🤖"
+            android:textColor="#000000"
             android:textSize="16sp"
             android:textStyle="bold"
+            app:backgroundTint="#DBD9DC"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/emprestimoContainer" />
 
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="44dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="28dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/user" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:text="Olá, José Felipe"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
