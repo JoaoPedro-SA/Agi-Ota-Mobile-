@@ -9,4 +9,11 @@ Clareza nas finanças, leveza na vida
 
 
 
+## Quem nos somos
+Somos um banco digital com foco em empréstimos e  em gestão financeira.
+
+Nosso objetivo é ajudar nossos clientes a evitarem gastos desnecessários 
+
+Priorizamos sempre a clareza com nossos clientes
+
 
